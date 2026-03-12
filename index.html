@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Amo-Arthur | CS × Product</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">M.A<span class="dot">.</span>A</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="mailto:michael.amoarthur@howard.edu" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" onclick="closeMobile()">Home</a>
+      <a href="#about" onclick="closeMobile()">About</a>
+      <a href="#projects" onclick="closeMobile()">Work</a>
+      <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-inner">
+      <div class="hero-tag reveal">Computer Science × <span class="red">Product Management</span></div>
+      <h1 class="hero-name reveal">
+        <span class="name-line">Michael</span>
+        <span class="name-line italic">Amo-Arthur</span>
+      </h1>
+      <p class="hero-origin reveal">Cape Coast, <span class="red">Ghana</span> → Washington, D.C.</p>
+      <p class="hero-sub reveal">Building tech that centers Black voices &amp; serves community.</p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#about" class="btn-ghost">Who I Am ↓</a>
+      </div>
+    </div>
+    <div class="hero-scroll-label">Scroll ↓</div>
+    <div class="hero-deco" aria-hidden="true">BUILDER</div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span>Python</span><span class="dot-sep">✦</span>
+      <span>Streamlit</span><span class="dot-sep">✦</span>
+      <span>SQL &amp; BigQuery</span><span class="dot-sep">✦</span>
+      <span>Figma</span><span class="dot-sep">✦</span>
+      <span>Product Strategy</span><span class="dot-sep">✦</span>
+      <span>GenAI</span><span class="dot-sep">✦</span>
+      <span>Agile / Scrum</span><span class="dot-sep">✦</span>
+      <span>UX Research</span><span class="dot-sep">✦</span>
+      <span>Howard University</span><span class="dot-sep">✦</span>
+      <span>AWS</span><span class="dot-sep">✦</span>
+      <span>Python</span><span class="dot-sep">✦</span>
+      <span>Streamlit</span><span class="dot-sep">✦</span>
+      <span>SQL &amp; BigQuery</span><span class="dot-sep">✦</span>
+      <span>Figma</span><span class="dot-sep">✦</span>
+      <span>Product Strategy</span><span class="dot-sep">✦</span>
+      <span>GenAI</span><span class="dot-sep">✦</span>
+      <span>Agile / Scrum</span><span class="dot-sep">✦</span>
+      <span>UX Research</span><span class="dot-sep">✦</span>
+      <span>Howard University</span><span class="dot-sep">✦</span>
+      <span>AWS</span><span class="dot-sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-container">
+      <div class="section-eyebrow reveal">About</div>
+      <div class="about-grid">
+        <div class="about-photo-col reveal">
+          <div class="photo-frame">
+            <img src="/Users/mikeyamo-arthur/Web_images/IMG_3256.JPG" alt="Michael Amo-Arthur" class="profile-img"
+                 onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')">
+            <div class="photo-caption">Howard University '27</div>
+          </div>
+          <div class="stat-row">
+            <div class="stat"><span class="stat-num red">3.78</span><span class="stat-label">GPA</span></div>
+            <div class="stat"><span class="stat-num red">3+</span><span class="stat-label">Companies</span></div>
+            <div class="stat"><span class="stat-num red">5+</span><span class="stat-label">Projects</span></div>
+          </div>
+        </div>
+
+        <div class="about-text-col">
+          <h2 class="about-heading reveal">The intersection of<br><em class="red">Tech &amp; Purpose</em></h2>
+          <p class="about-body reveal">I'm a Computer Science major with a Philosophy minor at Howard University. I don't just build code — I build tools that support community, identity, and access. My work lives where culture meets engineering, centered on ensuring Black voices and underserved communities lead the future of technology.</p>
+
+          <div class="tabs reveal">
+            <button class="tab-btn active" data-tab="skills">Skills</button>
+            <button class="tab-btn" data-tab="education">Education</button>
+            <button class="tab-btn" data-tab="experience">Experience</button>
+          </div>
+
+          <div class="tab-panel active" id="tab-skills">
+            <div class="skill-cards">
+              <div class="skill-card">
+                <h4>Software Engineering</h4>
+                <p>User-centered apps with scalable, clean architecture.</p>
+                <div class="pill-row">
+                  <span class="pill">Python</span><span class="pill">SQL</span>
+                  <span class="pill">BigQuery</span><span class="pill">Streamlit</span>
+                </div>
+              </div>
+              <div class="skill-card">
+                <h4>Product Management</h4>
+                <p>Bridging user needs and technical feasibility via Agile &amp; rapid prototyping.</p>
+                <div class="pill-row">
+                  <span class="pill">Figma</span><span class="pill">v0.ai</span>
+                  <span class="pill">UX Research</span><span class="pill">Roadmapping</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-education">
+            <div class="edu-card">
+              <div class="edu-logo">HU</div>
+              <div>
+                <h4>Howard University</h4>
+                <p class="red-sm">B.S. Computer Science, Philosophy Minor &nbsp;·&nbsp; 2023–2027</p>
+                <p>GPA: 3.78 &nbsp;|&nbsp; Certifications: Product Management (BVCC), AWS in Training</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-experience">
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                  <h4>Product / Project Manager</h4>
+                  <span class="tl-company">Ford Motor Company</span>
+                  <span class="tl-date">Jan 2026 – Present</span>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                  <h4>Tech Fellow</h4>
+                  <span class="tl-company">CodePath</span>
+                  <span class="tl-date">Jan 2026 – Present</span>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                  <h4>Google Tech Exchange Scholar</h4>
+                  <span class="tl-company">Google</span>
+                  <span class="tl-date">Jan 2025 – May 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-container">
+      <div class="section-eyebrow reveal">Featured Work</div>
+      <h2 class="section-title reveal">Projects that <em class="red">matter</em></h2>
+      <p class="section-sub reveal">Visual showcases of products and tools I've engineered.</p>
+
+      <div class="projects-grid">
+
+        <!-- FORD FEATURED -->
+        <div class="project-card featured reveal">
+          <div class="project-media">
+            <video src="/Users/mikeyamo-arthur/Web_images/Screen Recording 2026-02-20 at 10.57.38 AM.mov" muted loop playsinline onerror="this.style.display='none'"></video>
+            <div class="project-media-fallback ford-fallback">
+              <div class="fallback-inner">
+                <span class="fallback-logo">StoryStack</span>
+                <span class="fallback-sub">Ford × BVCC · Spring 2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-num">01</span>
+              <div class="pill-row">
+                <span class="pill">Python</span>
+                <span class="pill">Figma</span>
+                <span class="pill">GenAI</span>
+                <span class="pill">Product Strategy</span>
+              </div>
+            </div>
+            <h3 class="project-title">Ford × BVCC — StoryStack</h3>
+            <p class="project-desc">Led product discovery and prototyping for Ford's internal GenAI tooling across 3 sprint modules — from stakeholder interviews and pain-point mapping to brand creation. Our dashboard tool, <strong>StoryStack</strong>, was selected by Ford as the winning solution: an AI-powered platform that transforms raw research data into interactive, audience-aware narrative dashboards.</p>
+            <div class="project-links">
+              <a href="https://storystack.base44.app" target="_blank" rel="noopener" class="btn-primary sm">
+                <i class="fas fa-external-link-alt"></i>&nbsp; Live Demo
+              </a>
+              <a href="fordcasestudy.html" class="btn-ghost sm">Case Study →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- FITNESS -->
+        <div class="project-card reveal">
+          <div class="project-media">
+            <video src="/Users/mikeyamo-arthur/Web_images/ScreenRecording_02-24-2026 21-38-55_1.MP4" muted loop playsinline onerror="this.style.display='none'"></video>
+            <div class="project-media-fallback fitness-fallback">
+              <div class="fallback-inner">
+                <span class="fallback-logo">ADIM</span>
+                <span class="fallback-sub">Fitness Platform</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-num">02</span>
+              <div class="pill-row">
+                <span class="pill">Python</span>
+                <span class="pill">BigQuery</span>
+                <span class="pill">Streamlit</span>
+                <span class="pill">Gemini AI</span>
+              </div>
+            </div>
+            <h3 class="project-title">ADIM Fitness Platform</h3>
+            <p class="project-desc">Full-stack fitness analytics web app with AI workout coaching, personalized meal planning, community social feed, leaderboard, and real-time activity tracking. Built with Python, BigQuery, Altair, and Gemini AI.</p>
+            <div class="project-links">
+              <a href="fitnessapp.html" class="btn-primary sm">Case Study →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MUSEIQ -->
+        <div class="project-card reveal">
+          <div class="project-media">
+            <video src="/Users/mikeyamo-arthur/Web_images/ScreenRecording_02-24-2026 16-05-14_1.MP4" muted loop playsinline onerror="this.style.display='none'"></video>
+            <div class="project-media-fallback museiq-fallback">
+              <div class="fallback-inner">
+                <span class="fallback-logo">MuseIQ</span>
+                <span class="fallback-sub">Apple Music × AI</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-num">03</span>
+              <div class="pill-row">
+                <span class="pill">UX Research</span>
+                <span class="pill">Figma</span>
+                <span class="pill">Product Strategy</span>
+                <span class="pill">AI/ML</span>
+              </div>
+            </div>
+            <h3 class="project-title">MuseIQ — Cultural Discovery Layer</h3>
+            <p class="project-desc">AI-powered cultural discovery layer for Apple Music — blending music, podcasts, and cultural moments into one adaptive feed. Full product strategy: SWOT, personas, JTBDs, OKRs, and MoSCoW framework. Built to amplify underrepresented creators.</p>
+            <div class="project-links">
+              <a href="museiq.html" class="btn-primary sm">Case Study →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-container contact-inner">
+      <div class="contact-left reveal">
+        <div class="section-eyebrow">Contact</div>
+        <h2 class="contact-heading">Let's build<br>something <em class="red">meaningful.</em></h2>
+        <p class="about-body">I'm open to internships, collaborations, and conversations about tech, culture, and community. Reach out.</p>
+        <div class="contact-details">
+          <a href="mailto:michael.amoarthur@howard.edu" class="contact-row">
+            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+            <span>michael.amoarthur@howard.edu</span>
+          </a>
+          <a href="https://www.linkedin.com/in/michael-amo-arthur-888598287/" target="_blank" rel="noopener" class="contact-row">
+            <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+            <span>linkedin.com/in/michael-amo-arthur</span>
+          </a>
+          <a href="https://github.com/michaelamoarthur" target="_blank" rel="noopener" class="contact-row">
+            <span class="contact-icon"><i class="fab fa-github"></i></span>
+            <span>github.com/michaelamoarthur</span>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form reveal" onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="What's on your mind?" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" id="formSubmitBtn">Send Message →</button>
+        <p class="form-success" id="formSuccess">Message sent! I'll be in touch.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">M.A.A</span>
+      <span class="footer-copy">© 2026 Michael Amo-Arthur — Built with intention.</span>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/michael-amo-arthur-888598287/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/michaelamoarthur29" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:michaelamoarthur@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

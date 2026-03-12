@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADIM Fitness Platform | Michael Amo-Arthur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">M.A<span class="dot">.</span>A</a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Work</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="mailto:michael.amoarthur@howard.edu" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html#home" onclick="closeMobile()">Home</a>
+      <a href="index.html#about" onclick="closeMobile()">About</a>
+      <a href="index.html#projects" onclick="closeMobile()">Work</a>
+      <a href="index.html#contact" onclick="closeMobile()">Contact</a>
+    </div>
+  </nav>
+
+  <div class="cs-hero">
+    <div class="cs-hero-bg"></div>
+    <div class="cs-hero-inner">
+      <a href="index.html#projects" class="cs-back">← Back to Work</a>
+      <div class="cs-eyebrow">Case Study · Full-Stack Engineering · Python</div>
+      <h1 class="cs-title">ADIM<br><em style="color:var(--warm)">Fitness Platform</em></h1>
+      <p class="cs-subtitle">A full-stack fitness companion web app — AI workout coaching, personalized meal planning, community social feed, leaderboard, and real-time activity analytics. Built entirely in Python.</p>
+      <div class="cs-meta-bar">
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">My Role</span>
+          <span class="cs-meta-value">Software Engineer</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Stack</span>
+          <span class="cs-meta-value">Python · Streamlit · BigQuery · Gemini AI</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Type</span>
+          <span class="cs-meta-value">Full-Stack Web Application</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Testing</span>
+          <span class="cs-meta-value">Unit Tests · Mock Patching</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-body">
+
+    <!-- OVERVIEW -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Overview</div>
+      <h2 class="cs-h2">Your Personal Fitness Companion</h2>
+      <p class="cs-p">ADIM Workouts is an all-in-one fitness platform that combines AI coaching, nutrition planning, social community, and analytics into a single web app. It's designed to feel like a real consumer product — polished UI, real-time data, and personalized experiences — all powered by Python, Streamlit, and Google's cloud stack.</p>
+      <p class="cs-p">The app serves two types of users: goal-oriented athletes who want structured plans and data-driven insights, and casual users who want smart, effortless recommendations. ADIM handles both with a single adaptive interface.</p>
+    </div>
+
+    <!-- KEY NUMBERS -->
+    <div class="cs-section reveal">
+      <div class="cs-grid-3">
+        <div class="cs-card" style="text-align:center">
+          <div class="cs-number">6</div>
+          <div class="cs-number-label">Full feature modules</div>
+        </div>
+        <div class="cs-card" style="text-align:center">
+          <div class="cs-number">2</div>
+          <div class="cs-number-label">AI systems — workout + nutrition</div>
+        </div>
+        <div class="cs-card" style="text-align:center">
+          <div class="cs-number">100%</div>
+          <div class="cs-number-label">Python — front to back</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FILE STRUCTURE -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Technical Documentation</div>
+      <h2 class="cs-h2">Project Architecture</h2>
+      <p class="cs-p">The app follows a clean three-layer architecture — separating data access, display logic, and routing into distinct, testable modules.</p>
+
+      <div class="cs-doc-block">
+        <div class="cs-doc-header">
+          <span class="cs-doc-icon"><i class="fas fa-folder-open"></i></span>
+          <span>Project File Structure</span>
+        </div>
+        <div class="cs-doc-tree">
+          <div class="tree-item root">adim-workouts/</div>
+          <div class="tree-item l1">├── <span class="tree-file">app.py</span> <span class="tree-comment">— entry point, tab routing, custom CSS</span></div>
+          <div class="tree-item l1">├── <span class="tree-file">modules.py</span> <span class="tree-comment">— all UI display functions</span></div>
+          <div class="tree-item l1">├── <span class="tree-file">data_fetcher.py</span> <span class="tree-comment">— BigQuery reads/writes + Gemini AI calls</span></div>
+          <div class="tree-item l1">├── <span class="tree-file">home_page.py</span> <span class="tree-comment">— homepage slideshow component</span></div>
+          <div class="tree-item l1">├── <span class="tree-file">internals.py</span> <span class="tree-comment">— HTML component templating engine</span></div>
+          <div class="tree-item l1">├── <span class="tree-file">modules_test.py</span> <span class="tree-comment">— unit tests for display functions</span></div>
+          <div class="tree-item l1">└── <span class="tree-file">data_fetcher_test.py</span> <span class="tree-comment">— mocked BigQuery + AI tests</span></div>
+        </div>
+      </div>
+
+      <div class="cs-grid-2" style="margin-top:1px">
+        <div class="cs-card">
+          <h4><span class="red">data_fetcher.py</span> — Data Layer</h4>
+          <ul>
+            <li>Reads user profiles, workouts, and posts from BigQuery</li>
+            <li>Calls Gemini AI for context-aware workout and nutrition advice</li>
+            <li>Writes new posts and leaderboard entries back to BigQuery</li>
+            <li>Returns clean, structured dicts consumed by modules</li>
+            <li>All external calls mocked in tests for reliability</li>
+          </ul>
+        </div>
+        <div class="cs-card">
+          <h4><span class="red">modules.py</span> — Display Layer</h4>
+          <ul>
+            <li>display_post() — social feed card with profile image + caption</li>
+            <li>display_activity_summary() — Altair chart analytics dashboard</li>
+            <li>display_genai_advice() — multi-turn AI chat with session state</li>
+            <li>display_nutritional_ai_advice() — 7-day meal plan generator</li>
+            <li>display_leaderboard() — streak tracking + community rankings</li>
+          </ul>
+        </div>
+        <div class="cs-card">
+          <h4><span class="red">app.py</span> — Routing Layer</h4>
+          <ul>
+            <li>Six Streamlit tabs: Home, Leaderboard, Community, AI Chat, My Workouts, Your Posts</li>
+            <li>Custom CSS overrides for tab positioning, heading styles, spacing</li>
+            <li>Session state management across Streamlit reruns</li>
+            <li>display_activity_page() helper isolates workout tab logic</li>
+          </ul>
+        </div>
+        <div class="cs-card">
+          <h4><span class="red">internals.py</span> — Templating</h4>
+          <ul>
+            <li>Loads HTML files from custom_components/ directory</li>
+            <li>Replaces &#123;&#123;key&#125;&#125; placeholders with safe-escaped data</li>
+            <li>Renders via Streamlit's components.html() for rich UI elements</li>
+            <li>Handles quote/backslash escaping to prevent injection</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Features</div>
+      <h2 class="cs-h2">Six Modules. One App.</h2>
+      <div class="cs-grid-3">
+        <div class="cs-card">
+          <h4>🤖 AI Workout Coaching</h4>
+          <p>Users select experience level (Beginner → Pro) and goals, then chat with "John" — a Gemini-powered AI assistant. Full multi-turn conversation with session-state history persistence across Streamlit reruns.</p>
+        </div>
+        <div class="cs-card">
+          <h4>🥗 AI Meal Planning</h4>
+          <p>Generates a personalized 7-day meal plan from allergies, nutrition goals, weekly budget, and cooking time. Returns full shopping list (organized in 3 columns), estimated cost, and daily macro summary.</p>
+        </div>
+        <div class="cs-card">
+          <h4>📊 Activity Analytics</h4>
+          <p>Altair-powered bar charts comparing steps and calories across workout sessions. Four metric tiles (total workouts, distance, steps, calories) plus a side-by-side workout comparison view.</p>
+        </div>
+        <div class="cs-card">
+          <h4>👥 Community Feed</h4>
+          <p>Social feed of friends' workout posts ordered by timestamp. Each post shows profile picture, username, content, and post image. AI-generated daily motivation quote shown at the top of the feed.</p>
+        </div>
+        <div class="cs-card">
+          <h4>🏆 Leaderboard</h4>
+          <p>Tracks workout streaks, favorite exercises, and weekly plans. Daily streak confirmation modal creates a re-engagement habit loop. Users see their community rank and top performers.</p>
+        </div>
+        <div class="cs-card">
+          <h4>📤 Progress Sharing</h4>
+          <p>One-click "Post My Steps" button auto-generates a social post from the most recent workout — lowering friction for sharing milestones and driving community engagement.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEY ENGINEERING DECISIONS -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Engineering Notes</div>
+      <h2 class="cs-h2">Key Decisions</h2>
+      <div class="cs-quote">
+        <p>The AI chat interface uses session state to persist conversation history across Streamlit reruns — a non-trivial problem in Streamlit's stateless execution model. The assistant response only fires when the last message role is "user", preventing duplicate responses on rerun.</p>
+        <cite>modules.py · display_genai_advice()</cite>
+      </div>
+      <div class="cs-quote">
+        <p>Custom CSS overrides moved the tab navigation to the top-right corner of the viewport — giving the main content area maximum breathing room while keeping all six tabs accessible without a sidebar.</p>
+        <cite>app.py · Streamlit CSS overrides</cite>
+      </div>
+      <div class="cs-quote">
+        <p>The homepage uses a time-based auto-cycling slideshow built in pure Streamlit — tracking elapsed time in session state and triggering st.rerun() to advance slides, since Streamlit has no native timer component.</p>
+        <cite>home_page.py · create_streamlit_slideshow()</cite>
+      </div>
+    </div>
+
+    <!-- TESTING -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Testing Strategy</div>
+      <h2 class="cs-h2">How It's Tested</h2>
+      <div class="cs-grid-2">
+        <div class="cs-card">
+          <h4>modules_test.py</h4>
+          <p>Unit tests for every display function — verifying correct rendering paths, edge cases (missing username → "Anonymous", missing image → default URL), and error handling for invalid inputs like null timestamps.</p>
+        </div>
+        <div class="cs-card">
+          <h4>data_fetcher_test.py</h4>
+          <p>All BigQuery reads/writes and Gemini AI calls are mocked using <code>unittest.mock.patch</code> — isolating tests from live cloud services and ensuring consistent, repeatable results regardless of environment.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cs-section reveal">
+      <div class="cs-cta-bar">
+        <a href="index.html#projects" class="btn-primary">← Back to All Projects</a>
+        <a href="index.html#contact" class="btn-ghost">Work With Me →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">M.A.A</span>
+      <span class="footer-copy">© 2026 Michael Amo-Arthur</span>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/michael-amo-arthur-888598287/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/michaelamoarthur" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="mailto:michael.amoarthur@howard.edu"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MuseIQ — Apple Music AI Layer | Michael Amo-Arthur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">M.A<span class="dot">.</span>A</a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Work</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="mailto:michael.amoarthur@howard.edu" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html#home" onclick="closeMobile()">Home</a>
+      <a href="index.html#about" onclick="closeMobile()">About</a>
+      <a href="index.html#projects" onclick="closeMobile()">Work</a>
+      <a href="index.html#contact" onclick="closeMobile()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="cs-hero">
+    <div class="cs-hero-bg"></div>
+    <div class="cs-hero-inner">
+      <a href="index.html#projects" class="cs-back">← Back to Work</a>
+      <div class="cs-eyebrow">Case Study · Product Strategy · Apple Music</div>
+      <h1 class="cs-title">MuseIQ<br><em style="color:var(--warm)">Cultural Discovery Layer</em></h1>
+      <p class="cs-subtitle">A culturally intelligent audio experience that fuses music, stories, and trends — turning everyday listening into a personalized journey through pop culture. Built for Apple Music's next evolution.</p>
+      <div class="cs-meta-bar">
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">My Role</span>
+          <span class="cs-meta-value">Product Strategist &amp; Designer</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Platform</span>
+          <span class="cs-meta-value">Apple Music Ecosystem</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Tools</span>
+          <span class="cs-meta-value">Figma · UX Research · v0.ai</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Market</span>
+          <span class="cs-meta-value">$35B+ Global Streaming</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="cs-body">
+
+    <!-- OVERVIEW -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Overview</div>
+      <h2 class="cs-h2">Turning Apple Music Into a Culture Platform</h2>
+      <p class="cs-p">Gen Z and Millennial listeners increasingly rely on TikTok, Reels, and social media to discover music — not streaming apps. Apple Music has the data, the hardware, and the ecosystem. It's missing the <strong>cultural intelligence layer</strong> that connects listening to the broader world shaping it.</p>
+      <p class="cs-p">MuseIQ solves this by integrating music, podcasts, interviews, and cultural moments into a unified, adaptive listening feed that evolves with each user's taste and behavior — turning passive streaming into active cultural participation.</p>
+      <div class="cs-quote">
+        <p>For Gen Z and Millennial Apple Music users seeking deeper cultural connection, MuseIQ is an intelligent culture-driven discovery layer that fuses sound, story, and trend.</p>
+        <cite>MuseIQ Positioning Statement</cite>
+      </div>
+    </div>
+
+    <!-- KEY NUMBERS -->
+    <div class="cs-section reveal">
+      <div class="cs-grid-3">
+        <div class="cs-card" style="text-align:center">
+          <div class="cs-number">82%</div>
+          <div class="cs-number-label">of Gen Z discover music through social &amp; UGC platforms</div>
+        </div>
+        <div class="cs-card" style="text-align:center">
+          <div class="cs-number">$35B+</div>
+          <div class="cs-number-label">Global streaming market growing at 9% YoY</div>
+        </div>
+        <div class="cs-card" style="text-align:center">
+          <div class="cs-number">28.9%</div>
+          <div class="cs-number-label">Listening increase from personalized recommendations (Spotify data)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROBLEM -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Problem Space</div>
+      <h2 class="cs-h2">Five Core Problems</h2>
+      <div class="cs-grid-2">
+        <div class="cs-card">
+          <h4>Repetitive Shuffle</h4>
+          <p>Listeners experience impersonal, repetitive recommendations that reinforce past behavior instead of encouraging genuine exploration.</p>
+        </div>
+        <div class="cs-card">
+          <h4>No Cultural Context</h4>
+          <p>Users lack a centralized space connecting music to broader pop culture — artist stories, interviews, trends, and the "why" behind what they're hearing.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Siloed Media</h4>
+          <p>Music, podcasts, and cultural content exist in separate apps. Cross-media consumption habits are growing, but Apple Music doesn't support them.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Discovery Gap</h4>
+          <p>Social media now drives music discovery more than streaming algorithms — revealing a critical gap between pop culture trends and in-app recommendations.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOLUTION -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Product Solution</div>
+      <h2 class="cs-h2">Five Features. One Feed.</h2>
+      <div class="cs-grid-3">
+        <div class="cs-card">
+          <h4>Culture Capsules</h4>
+          <p>Daily AI-curated blends of songs, interviews, and cultural commentary — delivered as a scrollable feed that connects music to the world shaping it.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Mood &amp; Context Shuffle</h4>
+          <p>Tailors playback based on user emotion, activity, and cultural trends. Directly solves the #1 pain point: repetitive, context-blind shuffle.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Cross-Media Discovery</h4>
+          <p>Integrates Apple Music, Apple Podcasts, and Apple News into a single, unified listening experience — no app switching required.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Interactive Listening</h4>
+          <p>Users react, share, and explore cultural topics directly from their feed — building community around shared discovery moments.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Inclusive Design</h4>
+          <p>Voice navigation, visual transcripts, and adaptive layouts — ensuring the experience is globally accessible from day one.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Niche Cultural Subspaces</h4>
+          <p>AI-curated micro-communities: "Late Night Overthinkers," "Ghanaian Diaspora Beats," "Afro-Fusion Innovators." Identity-led discovery.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PERSONAS -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Personas</div>
+      <h2 class="cs-h2">Who MuseIQ Serves</h2>
+      <div class="cs-grid-2">
+        <div class="cs-card">
+          <h4>Primary — The Cultural Explorer</h4>
+          <p>Gen Z / young millennial. Actively searches for meaning and cultural connection in listening. Explores new genres, global sounds, underground artists, and creative subcultures. Wants platforms that spotlight diversity, context, and storytelling.</p>
+          <br>
+          <p><strong style="color:var(--text)">JTBD:</strong> "When I'm discovering new music, I want to effortlessly learn the cultural context and artist's story — so I can feel connected to the art and share meaningful insights with my friends."</p>
+        </div>
+        <div class="cs-card">
+          <h4>Secondary — The Functional Listener</h4>
+          <p>Busy students and professionals. Music is functional — background for studying, working out, or commuting. Rarely curates playlists. Wants a smooth experience that "just knows" what they need.</p>
+          <br>
+          <p><strong style="color:var(--text)">JTBD:</strong> "When I start an activity like studying or working out, I want my music to automatically match my specific mood and pace — so I can maintain focus without the distraction of skipping tracks."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OKRs -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Success Metrics</div>
+      <h2 class="cs-h2">OKRs &amp; North Star</h2>
+      <p class="cs-p">The North Star Metric: <strong>percentage of active Apple Music listeners who interact with MuseIQ's cultural layers on a weekly basis</strong> — Culture Capsules explored, stories shared, artist context pages visited.</p>
+      <div class="cs-grid-2">
+        <div class="cs-card">
+          <h4>OKR 1 — Best-in-Class Discovery</h4>
+          <ul>
+            <li>10% lower 90-day churn among MuseIQ users vs. control</li>
+            <li>15–20% increase in Daily Active Listening Time</li>
+            <li>25% reduction in skip rate on Mood Shuffle sessions</li>
+            <li>8-point NPS lift in the "Discovery" dimension</li>
+          </ul>
+        </div>
+        <div class="cs-card">
+          <h4>OKR 2 — Primary Discovery Layer</h4>
+          <ul>
+            <li>75% of active users engage with a Culture Capsule weekly</li>
+            <li>25% cross-media conversion rate (Capsule → Podcasts/News)</li>
+            <li>40% Weekly Cultural Interaction Rate (WCIR)</li>
+            <li>≥25% weekly reaction rate per active user session</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- GUARDRAILS -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Equity by Design</div>
+      <h2 class="cs-h2">Built-In Guardrails</h2>
+      <p class="cs-p">MuseIQ isn't just personalized — it's responsible. These guardrails ensure the product serves culture without exploiting or homogenizing it.</p>
+      <div class="cs-grid-2">
+        <div class="cs-card">
+          <h4>Algorithmic Fairness Ratio</h4>
+          <p>At least <strong style="color:var(--text)">30% of culturally surfaced content</strong> must originate from underrepresented creators — built directly into the recommendation algorithm, not bolted on later.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Repetition Guardrail</h4>
+          <p>Algorithmic repetition (same artists/songs appearing consecutively) capped at <strong style="color:var(--text)">below 10% per user session</strong> — enforcing genuine discovery over echo chambers.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Privacy First</h4>
+          <p>Built on Apple's on-device ML and privacy infrastructure. Fewer than <strong style="color:var(--text)">0.5%</strong> of active users should submit privacy-related tickets per month.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Performance Threshold</h4>
+          <p>New AI features must not raise Apple Music's load time beyond <strong style="color:var(--text)">+300ms</strong> — protecting usability and keeping the experience seamless.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cs-section reveal">
+      <div class="cs-cta-bar">
+        <a href="index.html#projects" class="btn-primary">← Back to All Projects</a>
+        <a href="index.html#contact" class="btn-ghost">Work With Me →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">M.A.A</span>
+      <span class="footer-copy">© 2026 Michael Amo-Arthur</span>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/michael-amo-arthur-888598287/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/michaelamoarthur" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="mailto:michael.amoarthur@howard.edu"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
