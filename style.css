@@ -174,11 +174,25 @@ body {
 .museiq-fallback .fallback-logo { color: var(--red); }
 .museiq-fallback .fallback-sub  { color: rgba(232,0,58,0.6); }
 
+.homedepot-fallback { background: linear-gradient(135deg, #1a1005 0%, #2e1a05 60%, #1a1005 100%); }
+.homedepot-fallback .fallback-logo { color: #f96302; }
+.homedepot-fallback .fallback-sub  { color: rgba(249,99,2,0.65); }
+
+.sci4ga-fallback { background: linear-gradient(135deg, #241c14 0%, #2b3a42 60%, #241c14 100%); }
+.sci4ga-fallback .fallback-logo { color: #c8502e; }
+.sci4ga-fallback .fallback-sub  { color: rgba(200,80,46,0.65); }
+
 /* When video IS present, hide the fallback */
 .project-media video + .project-media-fallback { display: none; }
 /* Show fallback if video hidden via onerror */
 .project-media video[style*="display: none"] + .project-media-fallback,
 .project-media video[style*="display:none"] + .project-media-fallback { display: flex; }
+
+/* Same logic for static image project covers */
+.project-media img + .project-media-fallback { display: none; }
+.project-media img[style*="display: none"] + .project-media-fallback,
+.project-media img[style*="display:none"] + .project-media-fallback { display: flex; }
+.project-media img { width: 100%; height: 100%; object-fit: cover; }
 
 .project-info { padding: 1.8rem 2rem 2rem; display: flex; flex-direction: column; flex: 1; }
 .project-meta { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
