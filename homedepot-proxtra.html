@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Depot × Pro Xtra — Checkout Recovery | Michael Amo-Arthur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">M.A<span class="dot">.</span>A</a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Work</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="mailto:michael.amoarthur@howard.edu" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html#home" onclick="closeMobile()">Home</a>
+      <a href="index.html#about" onclick="closeMobile()">About</a>
+      <a href="index.html#projects" onclick="closeMobile()">Work</a>
+      <a href="index.html#contact" onclick="closeMobile()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="cs-hero">
+    <div class="cs-hero-bg"></div>
+    <div class="cs-hero-inner">
+      <a href="index.html#projects" class="cs-back">← Back to Work</a>
+      <div class="cs-eyebrow">Product Management Externship · The Home Depot · Summer 2026</div>
+      <h1 class="cs-title">Pro Xtra<br><em style="color:var(--warm)">Checkout Recovery</em></h1>
+      <p class="cs-subtitle">Two competing product solutions — one non-agentic, one agentic — built to close checkout friction for contractor customers inside Home Depot's Pro Xtra loyalty program.</p>
+      <div class="cs-meta-bar">
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">My Role</span>
+          <span class="cs-meta-value">Product Management Extern</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Timeline</span>
+          <span class="cs-meta-value">Summer 2026</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Stack</span>
+          <span class="cs-meta-value">PRD Writing · Base44 · Lovable · Canva</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Deliverables</span>
+          <span class="cs-meta-value red">2 PRDs · 2 Prototypes · Deck</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="cs-body">
+
+    <!-- OVERVIEW -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Overview</div>
+      <h2 class="cs-h2">The Problem: Checkout Friction for Pro Customers</h2>
+      <p class="cs-p">Pro Xtra is Home Depot's loyalty program for contractors and trade professionals. The program depends on Pros being correctly identified and credited at checkout — but that identification step regularly breaks down at the register, creating lost discounts, disputed receipts, and frustrated repeat customers.</p>
+      <p class="cs-p">To ground the problem, I built out a contractor persona — <strong>Marcus T., nicknamed "Stacky"</strong> — representing a high-frequency Pro whose checkout experience surfaced the core friction points the rest of the project was built around. The research behind this persona was informed by a structured, paraphrased interview with a Pro Xtra associate, since primary access was limited to that single source — every deliverable I produced was grounded in that interview plus publicly available Home Depot / Pro Xtra materials, with nothing invented or inferred beyond what those sources supported.</p>
+      <div class="cs-quote">
+        <p>Marcus doesn't have time to argue about a discount at the register — if Pro Xtra can't recognize him instantly, he'll take the job's spend somewhere that can.</p>
+        Persona synthesis · "Stacky," Pro Xtra contractor persona
+      </div>
+    </div>
+
+    <!-- KEY NUMBERS -->
+    <div class="cs-section reveal">
+      <div class="cs-grid-3">
+        <div class="cs-card" style="text-align:center">
+          <div class="cs-number">2</div>
+          <div class="cs-number-label">Competing product solutions designed and defended</div>
+        </div>
+        <div class="cs-card" style="text-align:center">
+          <div class="cs-number">6</div>
+          <div class="cs-number-label">Specialized tools orchestrated by the Recovery Agent</div>
+        </div>
+        <div class="cs-card" style="text-align:center">
+          <div class="cs-number red">16</div>
+          <div class="cs-number-label">Slide stakeholder presentation, delivered to the Pro Xtra team</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TWO SOLUTIONS -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Process</div>
+      <h2 class="cs-h2">Two Solutions, Two Philosophies</h2>
+      <p class="cs-p">Rather than pitch a single fix, I scoped and built two full, competing PRDs — one deliberately non-agentic and rules-based, the other agentic — to give the Pro Xtra team a real choice between a safer, incremental solution and a more ambitious, AI-driven one.</p>
+      <div class="cs-modules">
+        <div class="cs-module">
+          <div class="cs-module-num">01</div>
+          <div>
+            <h4>Smart Pro Identification — Non-Agentic</h4>
+            <p>A rules-based checkout safety net combining Bluetooth/geofencing detection with a physical Pro Xtra card, so a Pro is flagged and recognized before they ever reach the register. Deterministic, low-risk, and fast to implement — designed as the conservative option for a team that needs reliability over ambition.</p>
+          </div>
+        </div>
+        <div class="cs-module">
+          <div class="cs-module-num">02</div>
+          <div>
+            <h4>Pro Xtra Recovery Agent — Agentic</h4>
+            <p>A single orchestrator agent coordinating a six-tool pipeline — including receipt parsing, transaction matching, account verification, policy lookup, and fraud-risk detection — to recover missed Pro Xtra credit after the fact. Built with four concrete refusal thresholds, so the agent escalates to a human rather than resolving edge cases on its own.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DELIVERABLES -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">The Work</div>
+      <h2 class="cs-h2">What I Shipped</h2>
+      <div class="cs-grid-2">
+        <div class="cs-card">
+          <h4>Two Full PRDs</h4>
+          <p>Complete product requirement documents for both the Smart Pro Identification system and the Pro Xtra Recovery Agent — scoped, sourced, and written for a stakeholder audience.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Clickable Prototypes</h4>
+          <p>Base44 app prototypes and Lovable wireframes bringing both concepts to life, so the Pro Xtra team could interact with the checkout flows rather than just read about them.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Stakeholder Presentation</h4>
+          <p>A 16-slide Canva deck and accompanying speaking script, built to walk the Pro Xtra team through the problem, both solutions, and a clear recommendation.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Agentic Re-Audit</h4>
+          <p>A dedicated audit distinguishing which steps in the Recovery Agent were genuinely agentic versus rule-based — sharpening the team's (and my own) precision on what "agentic" actually means in a product spec.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-section reveal">
+      <div class="cs-doc-block">
+        <div class="cs-doc-header">
+          <i class="fas fa-folder-open cs-doc-icon"></i>
+          pro-xtra-checkout-recovery/
+        </div>
+        <div class="cs-doc-tree">
+          <div class="tree-item root">📁 Smart Pro Identification (Non-Agentic)</div>
+          <div class="tree-item l1 tree-file">📄 PRD — Bluetooth/geofencing + physical card safety net</div>
+          <div class="tree-item l1 tree-file">🔗 Base44 prototype</div>
+          <div class="tree-item root" style="margin-top:.6rem">📁 Pro Xtra Recovery Agent (Agentic)</div>
+          <div class="tree-item l1 tree-file">📄 PRD — 6-tool orchestrator + 4 refusal thresholds</div>
+          <div class="tree-item l1 tree-file">🔗 Lovable wireframes — pro-xtra-wireframes.lovable.app</div>
+          <div class="tree-item root" style="margin-top:.6rem">📁 Presentation</div>
+          <div class="tree-item l1 tree-file">🎞 16-slide Canva deck + speaking script</div>
+          <div class="tree-comment" style="margin-top:.6rem">// grounded entirely in a paraphrased Pro Xtra associate interview + public sources</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS BUILT -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">What I Learned</div>
+      <h2 class="cs-h2">Skills Strengthened</h2>
+      <div class="cs-grid-3">
+        <div class="cs-card">
+          <h4>Comparative Product Strategy</h4>
+          <p>Scoping two legitimate, competing solutions to the same problem instead of anchoring early on a single answer.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Agentic System Design</h4>
+          <p>Defining tool orchestration, refusal thresholds, and human escalation points for an AI agent handling real financial transactions.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Working from Constrained Research</h4>
+          <p>Building rigorous, evidence-grounded deliverables from a single primary interview, without overreaching into invented detail.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Enterprise Prototyping</h4>
+          <p>Standing up functional Base44 and Lovable prototypes fast enough to support a live stakeholder walkthrough.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Executive Presentation</h4>
+          <p>Distilling two dense PRDs into a 16-slide narrative a retail stakeholder team could act on in one sitting.</p>
+        </div>
+        <div class="cs-card">
+          <h4>Self-Auditing Rigor</h4>
+          <p>Going back through my own agentic spec to correctly separate true agentic behavior from rule-based logic.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cs-section reveal">
+      <div class="cs-cta-bar">
+        <a href="https://pro-xtra-wireframes.lovable.app" target="_blank" rel="noopener" class="btn-primary">
+          <i class="fas fa-external-link-alt"></i>&nbsp; View Lovable Wireframes
+        </a>
+        <a href="index.html#projects" class="btn-ghost">← Back to All Projects</a>
+        <a href="index.html#contact" class="btn-ghost">Work With Me →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">M.A.A</span>
+      <span class="footer-copy">© 2026 Michael Amo-Arthur</span>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/michael-amo-arthur-888598287/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/michaelamoarthur29" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="mailto:michael.amoarthur@howard.edu"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
